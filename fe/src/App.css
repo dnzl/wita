@@ -1,0 +1,93 @@
+@import url("../node_modules/normalize.css/normalize.css");
+h1, h2 {
+  text-align: center;
+}
+ul, li{ list-style: none; padding: 0;}
+
+.App {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  font-size: 1em;
+  color: white;
+}
+
+.game{
+  display: flex;
+  text-align: center;
+}
+
+aside{
+  border-right: 1px #ccc solid;
+  padding: 1em;
+  width: 25%;
+}
+
+aside ul{ text-align: left;}
+aside .player { margin-top: 1em; flex-wrap: wrap;}
+aside .player.winning { font-weight: bold;}
+aside .player.me { color: lightskyblue; font-weight: bold; }
+aside .winning-status{ width: 10%;}
+aside .name{ font-size: .9em; width: 60%; }
+aside .points{ width: 20%;}
+aside .voting-status{ width: 10%;}
+aside .voted-for{ font-size: .9em; display: block;}
+
+
+.game .main{ padding: 1em; width: 70vw;}
+
+.game q{
+  font-style: italic;
+  display: block;
+  font-size: 2em;
+  margin: 1em;
+  pad: 1em;
+}
+
+.pills button,
+.btn{
+  margin: 1em; padding: .5em 1em; border-radius: 8px;
+}
+.pills button.selected{background-color: #666;}
+
+.facts-form{
+  padding: 2em 0;
+}
+
+input.txt{
+  padding:.5em 1em;
+  border-radius: 8px;
+  margin: 1em;
+}
+
+.btn{
+  margin-left: .5em;
+}
+
+.my-facts li{
+  margin: .5em 0;
+  padding: 1em;
+  border-bottom: 1px #666 solid;
+}
+.my-facts li button{
+  background-color: transparent;
+  border: none;
+  font-size: .8em;
+  color: #ccc;
+  text-decoration: underline;
+  margin-left: 1em;
+}
+
+.reveal { font-size: 5em;}
+
+.player-list li {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.host-options{
+  padding: 2em 0;
+}
